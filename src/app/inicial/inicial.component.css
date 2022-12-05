@@ -1,7 +1,11 @@
 body{
     margin: 0;
     padding: 0;
+
+
+   
 }
+
 
 section{
    
@@ -12,32 +16,46 @@ section{
     height: 100vh;
 }
 
+.aumento-onda {
+    width: 1200px;
+}
 
-.waves{
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    
-}
-.waves path {
-    fill: #9161c2;
-}
+
+
 
 .cor-fundo{
-    background-color:#9161c2;
+    /*background-image: url("https://img.freepik.com/fotos-gratis/detalhe-abstrato-de-parede-com-fragmentos-de-grafite-colorido_181624-32425.jpg?w=900&t=st=1670247674~exp=1670248274~hmac=6a3e56cabea0e47a1f917e08e51677494a7acc7ca650e845c75bffc6637c1a01")*/ 
+    
+    background-color:#fff;
   
 }
 
-.containerr{
-    height: 450px;
+.container-2{
+    width: 1100px;
+
+}
+
+
+/*.containerr{
+    height: 500px;
     width: auto;
     display: flex;
    flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
+    align-items: center;}*/
 
-   
+   .container {
+    height: 250px;
+   }
   
+
+
+.animated {
+    width: 300px;
+    height: 300px;
+    margin-right: 200px;
+    margin-bottom: 200px;
+    
 }
 .containerr2 {
     height: 400px;
@@ -47,14 +65,15 @@ section{
 .font{
     font-size: 20px;
     color: orange;
+    margin-left: 210px;
 }
 
 .font-1{
     font-size: 10px;
-    color: aliceblue;
+    color: black;
 }
 span{
-    color: aliceblue;
+    color: black;
 }
 
 .bola-laranja {
@@ -74,15 +93,15 @@ span{
     margin-bottom: 50px;
     
 }
-.bloco-1{
-    display: flex;
+/*.bloco-1{
+    
     align-items: center;
     flex-direction: column;
     justify-content: center;
     margin-top: 150px;
     margin-bottom: 50px;
    
-}
+}*/
 
 
 .text-white{
@@ -92,9 +111,39 @@ color: white;
     margin-left: 30px;
 
 }
+.imagem-inicio {
 
-.bloco-3{
-    
-
- 
+   
+    justify-content: center;
+    margin-left: 150px ;
+    margin-top: 70px ;
 }
+
+.gradient {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    background: linear-gradient(45deg,  #80489C, #FF8FB1, #FCE2DB);
+
+}
+.bloco-2{
+    background-color:  #2A3990;
+    padding: 5rem;
+    width: 1250px;
+    height: 300px;
+  
+    
+}
+ .texto-inicio {
+    
+  margin-right: 30px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+    
+ }
+ .texto-2 {
+    margin-bottom: 190px;
+ } 
+ .texto-2 p {margin-bottom: 190px ;}
