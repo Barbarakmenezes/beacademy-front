@@ -108,3 +108,8 @@ nav.container{
     width: 100%;
     opacity: 0.2;
   }
+
+  .botao-entrar{
+    border: none;
+    opacity: 0.5;
+  }
