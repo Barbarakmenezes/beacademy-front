@@ -5,16 +5,32 @@ import { AppComponent } from './app.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HeaderComponent } from './header/header.component';
 import { InicialComponent } from './inicial/inicial.component';
+import { SwiperModule } from "swiper/angular";
+import { FooterComponent } from './footer/footer.component';
+import { FeedComponent } from './feed/feed.component';
+import { CadastrarComponent } from './cadastrar/cadastrar.component';
+import { LoginComponent } from './login/login.component';
+import { AppRoutingModule } from './app-routing.module';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    InicialComponent
+    InicialComponent,
+    FooterComponent,
+    FeedComponent,
+    CadastrarComponent,
+    LoginComponent
   ],
   imports: [
+    
     BrowserModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    SwiperModule,
+    AppRoutingModule , 
+    AppRoutingModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

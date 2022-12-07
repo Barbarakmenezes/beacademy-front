@@ -66,6 +66,7 @@ nav.container{
         justify-content: space-between;
         color: black;
         margin-left: 380px;
+        
     }
 
     .links ul{
@@ -112,4 +113,8 @@ nav.container{
   .botao-entrar{
     border: none;
     opacity: 0.5;
+    padding: 15px;
+    margin-left: 20px;
+    background-color: #0002A1;
+    color: whitesmoke;
   }
