@@ -22,7 +22,11 @@ ul.social-network li {
     padding: 10px;
 }
 
-
+.animated {
+    width: 200px;
+    height: 200px;
+    margin-left: 500px;
+}
 
 .fa-facebook-official:hover {
     color: #3b4fd2;

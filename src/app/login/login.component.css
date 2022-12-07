@@ -1,0 +1,23 @@
+
+
+.tam-f {
+    font-size: larger;
+}
+.back {
+    background-image:  url("https://static.vecteezy.com/ti/vetor-gratis/p1/2373703-creative-artistic-colorful-abstract-background-vetor.jpg");
+    min-height: 695px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card {
+
+ border-radius: 10%;
+ padding: 40px;
+ width: 350px;
+ height: 550px;
+ opacity: 1;
+ background: linear-gradient(90deg,#ffffff, #ffffff, #91bfec );
+
+}

@@ -4,11 +4,149 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Nerko+One&family=Poppins:wght@300;400;500;600;700&family=Shadows+Into+Light&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&family=Poppins:ital,wght@0,400;0,500;1,200&display=swap');
 
 *{
     
     box-sizing: border-box;
 }
+
+/*-----------> Header ----------------*/
+
+
+.color{
+    background-color: #fff;
+}
+
+body{
+    --heading-color: hsl(var(--hue-1), 61%, 24%);
+    --text-color: hsl(var(--hue-1), 17%, 63%);
+
+}
+
+.botao-entrar{
+ position: relative;
+ display: inline-block;
+ padding: 12px 36px;
+ margin: 10px 0;
+ color: #fff;
+ text-decoration: none;
+ text-transform: uppercase;
+ font-size: 14px;
+ letter-spacing: 1px;
+ border-radius: 40px;
+ background: linear-gradient(90deg, #0162c8, #55e7fc );
+
+}
+a{
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    transition: 0.3s;
+}
+
+nav.container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+   
+}
+
+.logo {
+
+    margin-right: 1.5rem;
+    font-family:  'Nerko One', cursive;
+    font-size: 1.5rem;
+    color: var(--heading-color);
+    letter-spacing: 1px;
+    color: black;
+    padding: auto;
+    
+    
+}
+.containerheader {
+    position: relative;
+    width: 100%;
+    padding: 0 1.5rem;
+    margin: auto;
+    max-width: 80rem;
+    
+    
+    }
+
+    .links{
+        flex: 1;
+        display: flex;
+        justify-content: space-between;
+        color: black;
+        margin-left: 380px;
+        
+        
+        
+    }
+
+    .links ul{
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    .nav-link {
+        position: relative;
+        display: inline-block;
+        margin: 0 1rem;
+        text-transform: uppercase;
+        font-size: 0.75rem;
+        letter-spacing: 0.5px;
+        color: var(--text-color);
+        font-weight: 500;
+        opacity: 0.9;
+
+    }
+  .nav-link::after{
+    content: "";
+    position: relative;
+    width: 0;
+    height: 10px;
+    border-radius: 5px;
+    background-color: var(--main-color-1);
+    bottom: 0;
+    left: -5px;
+    z-index: -1;
+    opacity: 0;
+    transition: 0.3s;
+  }
+
+  .nav-link:hover{
+    color: var(--heading-color);
+  }
+
+  .nav-link:hover::after{
+    width: 100%;
+    opacity: 0.2;
+  }
+
+  .botao-entrar{
+    border: none;
+    opacity: 0.5;
+    padding: 15px;
+    margin-left: 20px;
+    background-color: #0002A1;
+    color: whitesmoke;
+  }
+
+/*-----------> Fim  Header ----------------*/
+
 
 
 body{
@@ -24,6 +162,69 @@ body{
 
 
 
+/* ----------> Buttons <-------------- */
+
+.button1 {
+    
+        position: relative;
+        display: inline-block;
+        padding: 12px 36px;
+        margin: 10px 0;
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 14px;
+        letter-spacing: 1px;
+        border-radius: 40px;
+        background: linear-gradient(90deg, #0162c8, #FB2576);
+        border: none;
+        margin-left: 75px;
+        
+      
+}
+
+  .button2 {
+    position: relative;
+    display: inline-block;
+    padding: 12px 36px;
+    margin: 10px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+    border-radius: 40px;
+     background: linear-gradient(90deg, #0162c8,  #835ca3);
+     border: none;
+    margin-left: 30px;
+      
+  }
+  .cor {
+    color: #07b3bf;
+  }
+
+  .separar {
+    height: 150px;
+  }
+.mb {
+    margin-bottom: 50px;
+}
+
+  .button3{
+    position: relative;
+    display: inline-block;
+    padding: 12px 36px;
+    margin: 10px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+    border-radius: 40px;
+     background: linear-gradient(90deg, #0162c8,  #07b3bf);
+     border: none;
+     margin-left: 20px;
+  }
 
 
 
@@ -281,23 +482,7 @@ color: white;
     margin-top: 70px ;
 }
 
-.button1{
-  background-color: #FB2576;
-  border: none;
-  color: antiquewhite;
-padding: 0.7rem;
-margin-left: 180px;
-margin-right: 30px;
 
-
-}
-.button2 {
-    background-color: #3F0071;
-    border: none;
-    color: antiquewhite;
-    padding: 0.7rem;
-    
-}
 
 .bloco-2{
     background-color:  #2A3990;
@@ -472,5 +657,5 @@ justify-content: center;
 }
 
  .lista1 {
-    margin-left: 80px;
+    margin-left: 110px;
  }
