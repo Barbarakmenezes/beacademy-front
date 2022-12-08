@@ -14,10 +14,11 @@
 .card {
 
  border-radius: 10%;
- padding: 40px;
- width: 350px;
- height: 550px;
+ padding: 30px;
+ width: 300px;
+ height: 500px;
  opacity: 1;
- background: linear-gradient(90deg,#ffffff, #ffffff, #91bfec );
+ background: linear-gradient(90deg,#91bfec ,#ffffff, #ffffff, #91bfec );
+ margin-top: 100px;
 
 }

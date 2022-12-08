@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,200&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Nerko+One&family=Poppins:wght@300;400;500;600;700&display=swap');
 
@@ -205,6 +205,9 @@ body{
 
   .separar {
     height: 150px;
+  }
+  .separartopo{
+    height: 70px;
   }
 .mb {
     margin-bottom: 50px;
@@ -659,3 +662,8 @@ justify-content: center;
  .lista1 {
     margin-left: 110px;
  }
+
+
+ /* --------- apresentação  -------------*/
+
+
