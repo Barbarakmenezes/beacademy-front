@@ -1,5 +1,8 @@
+import {HttpClientModule}from '@angular/common/http'
+
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
@@ -13,6 +16,8 @@ import { LoginComponent } from './login/login.component';
 import { AppRoutingModule } from './app-routing.module';
 
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,15 +26,18 @@ import { AppRoutingModule } from './app-routing.module';
     FooterComponent,
     FeedComponent,
     CadastrarComponent,
-    LoginComponent
+    LoginComponent,
+  
   ],
   imports: [
     
     BrowserModule,
     FontAwesomeModule,
+    HttpClientModule,
     SwiperModule,
     AppRoutingModule , 
-    AppRoutingModule
+    AppRoutingModule, 
+    FormsModule
 
   ],
   providers: [],
