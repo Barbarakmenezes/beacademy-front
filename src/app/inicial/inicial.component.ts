@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BehaviorSubject } from 'rxjs';
 
 
 import { AppComponent } from '../app.component';
@@ -30,18 +31,17 @@ export class InicialComponent implements OnInit {
  window.scroll(0,0)
  
   }
-  control = document.querySelectorAll('.control');
+  controls = document.querySelectorAll('.control');
   currentitem=0;
-  item = document.querySelectorAll('item');
-   maxItems = this.item.length;
+  items = document.querySelectorAll('item');
+   maxItems = this.items.length;
 
 
 
-slidedireita(){
-  
-}
+   
 
-slideesquerda(){}
+
+   
 
  
 }
