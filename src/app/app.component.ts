@@ -11,17 +11,7 @@ import { SwiperOptions } from 'swiper';
 export class AppComponent {
   title = 'beacademy-front';
 
-  config: SwiperOptions = {
-    pagination: { 
-      el: '.swiper-pagination', 
-      clickable: true
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev'
-    },
-    spaceBetween: 30
-  };  
+  
    
 }
 

@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 
-import { SwiperComponent } from "swiper/angular";
-import SwiperCore, { Pagination, Navigation } from "swiper";
+
 import { AppComponent } from '../app.component';
-SwiperCore.use([Pagination, Navigation]);
+
+
+
 
 
 
@@ -20,15 +21,27 @@ SwiperCore.use([Pagination, Navigation]);
   
 })
 export class InicialComponent implements OnInit {
-   
-
+    
+  
 
   constructor() { }
 
   ngOnInit(): void {
+ window.scroll(0,0)
+ 
   }
+  control = document.querySelectorAll('.control');
+  currentitem=0;
+  item = document.querySelectorAll('item');
+   maxItems = this.item.length;
 
-     
-   
 
+
+slidedireita(){
+  
+}
+
+slideesquerda(){}
+
+ 
 }

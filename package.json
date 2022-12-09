@@ -26,6 +26,7 @@
     "ngx-bootstrap": "^9.0.0",
     "ngx-order-pipe": "^2.2.0",
     "popper.js": "^1.14.3",
+    "primeicons": "^6.0.1",
     "rxjs": "~7.5.0",
     "swiper": "^7.4.1",
     "tslib": "^2.3.0",

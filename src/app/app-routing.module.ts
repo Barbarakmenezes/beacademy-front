@@ -5,6 +5,7 @@ import { InicialComponent} from './inicial/inicial.component';
 import { CadastrarComponent } from './cadastrar/cadastrar.component';
 import { LoginComponent } from './login/login.component';
 import {FooterComponent } from './footer/footer.component'
+import { FeedComponent } from './feed/feed.component';
  
 
 
@@ -15,7 +16,8 @@ const routes: Routes = [
   { path:'inicial', component: InicialComponent},
   {path: 'login', component: LoginComponent},
   {path:'cadastrar', component: CadastrarComponent}, 
-{path:'footer', component: FooterComponent}
+{path:'footer', component: FooterComponent}, 
+{path: 'feed', component: FeedComponent}
 
 
 

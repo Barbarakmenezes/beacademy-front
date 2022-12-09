@@ -14,7 +14,8 @@
  
                <div class="col-md-6"> <div class="form-group">
                 <label for="nome" >Nome :</label>
-                <input [(ngModel)]="usuario.nome" class="form-control" type="text" name="nome" id="nome" placeholder="Seu nome"></div></div>
+               <span class="fa fa-user"></span>
+                <input [(ngModel)]="usuario.nome" class="form-control" type="text" name="nome" id="nome" class="form-control" placeholder="Seu nome"></div></div>
                
        
        
@@ -23,7 +24,8 @@
           <div class="col-md-6">
              <div class="form-group ">
                 <label for="usuario" >Usuário :</label>
-                <input  [(ngModel)]="usuario.usuario"  class="form-control" type="text" name="usuario" id="usuario" placeholder="Seu usuario"></div>
+                <span class="fa fa-envelope"></span>
+                <input  [(ngModel)]="usuario.usuario"  class="form-control" type="text" name="usuario" id="usuario" placeholder="Seu email"></div>
        </div>
           </div>
                   
@@ -32,37 +34,38 @@
  
                 <div class="form-group">
                    <label for="foto" >Link da foto:</label>
+                   <span class="fa fa-camera"></span>
                    <input  [(ngModel)]="usuario.foto"   class="form-control" type="text" name="foto" id="foto" placeholder="Link da sua foto"></div>
   
  
                    <div class="form-group">
                       <label for="senha" >Senha:</label>
+                      <span class="fa fa-lock"></span>
                       <input  (input)="confirmSenha($event)" class="form-control" type="password" name="senha" id="senha" placeholder="Sua senha"></div>
  
  
                       <div class="form-group">
                          <label for="confirSenha" >Confirmar senha:</label>
+                         <span class="fa fa-lock"></span>
                          <input  [(ngModel)]="usuario.senha"  class="form-control" type="password" name="confirmSenha" id="confirmSenha" placeholder="Confirme sua senha"></div>
  
  
                          
-                         <div class="form-group">
-                            <label for="senha" >Tipo de usuário:</label>
-                           <select class="form-control" name="tipo" id="tipo" ><option>Selecione um tipo de usuário:</option>
-                            <option value="normal">Normal</option>
-                            <option value="adm">Administrador</option></select>
-                            </div>
+                         
  
                              <div class="d-flex justify-content-center mt-4">
-                                <button type="submit" class="btn color mr-4 mb-4 text-white" routerLink='/login'>Cancelar</button>
-                                <button  type="submit" class="btn color text-white mb-4" (click)="cadastrar()" > Cadastrar</button></div>
+                                <button type="submit" class="button1" routerLink='/login'>Cancelar</button>
+                                <button  type="submit" class="button2" (click)="cadastrar()" > Cadastrar</button></div>
  
  
  
                                </form>
+
+                               
        </div>
+      
     </div>
-  
+   
          
          
       

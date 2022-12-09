@@ -3,9 +3,48 @@
 
 .cad-text{
     font-family: 'Poppins', sans-serif;
-
+ font-weight: 500;
+ 
 }
 
+
+
+.button1 {
+    
+    position: relative;
+    display: inline-block;
+    padding: 12px 36px;
+    margin: 10px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+    border-radius: 40px;
+    background: linear-gradient(90deg, #0162c8, #FB2576);
+    border: none;
+    margin-left: 20px;
+    
+    
+  
+}
+
+.button2 {
+position: relative;
+display: inline-block;
+padding: 12px 36px;
+margin: 10px 0;
+color: #fff;
+text-decoration: none;
+text-transform: uppercase;
+font-size: 14px;
+letter-spacing: 1px;
+border-radius: 40px;
+ background: linear-gradient(90deg, #0162c8,  #835ca3);
+ border: none;
+margin-left: 30px;
+  
+}
 
 
 .gradient {
@@ -42,28 +81,30 @@ width: 100vw;
 .form-box {
     backdrop-filter: blur(40px);
     padding: 0 70px;
+    padding-bottom: 30px;
 
     border-radius: 20px;
     margin: auto;
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
+span {
+    position: absolute;
+    margin-left: 16px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    color: rgba(42, 56, 165, 0.579);
+  }
+  .form-group .form-control {
+    padding-left: 2.375rem;
+  }
 
 
 .mr-4 {
     margin-right: 30px;
 }
 
-.color {
-    background-color: #E80F88;
-    
-}
 
 
-.color-2 {
-    background-color: #5b6c7e;
-}
-.back {
-    background-image: url('https://marquesfernandes.com/wp-content/uploads/2020/03/alexander-popov-iQqqo2zpmTI-unsplash-scaled.jpg');
-    
-}
+
