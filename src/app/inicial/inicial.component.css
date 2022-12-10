@@ -200,6 +200,7 @@ nav.container{
     border-radius: 40px;
     background: linear-gradient(90deg, #0162c8, #55e7fc );
     margin-left: 1em;
+    cursor: pointer;
 }   
 
 
@@ -218,6 +219,7 @@ nav.container{
         background: linear-gradient(90deg, #0162c8, #FB2576);
         border: none;
         margin-left: 75px;
+        cursor: pointer;
         
       
 }
@@ -236,6 +238,7 @@ nav.container{
     background: linear-gradient(90deg, #e5d188, #c6841a);
     border: none;
     margin-left: 75px;
+    cursor: pointer;
     
 
 }
@@ -253,7 +256,7 @@ nav.container{
      background: linear-gradient(90deg, #0162c8,  #835ca3);
      border: none;
     margin-left: 30px;
-
+cursor: pointer;
     
       
   }
@@ -272,6 +275,7 @@ nav.container{
      background: #22b2d3;
      border: none;
     margin-left: 30px;
+    cursor: pointer;
   }
 
 
@@ -622,6 +626,7 @@ justify-content: center;
     height:34rem;
     background-color:#2A3990;
     align-items: center;
+    flex-wrap: nowrap;
     
  }
 
@@ -639,7 +644,7 @@ justify-content: center;
     border-radius: 10%;
     background-size: 300% 300%;
     animation: colors 15s forwards infinite;
-    margin-left: 3rem;
+    margin-left: 1rem;
     
   
   
@@ -689,11 +694,52 @@ textarea{
 
 .card-final {
     height: 15rem;
-    width: 12rem;
-    background-color: gray;
+    width: 13rem;
+    background-color: rgb(251, 245, 245);
     opacity: 0.5;
     border-radius: 2%;
+    cursor: pointer;
+   
+    
+   
 }
+
+.card-final i{
+    font-size: 28pt;
+   
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+
+
+
+
+
 .final {
     justify-content: space-between;
+}
+
+.fa-comments{
+    color: #FB2576;
+}
+
+.fa-mug-saucer{
+    color: #F7EC09;
+} 
+.fa-sharp {
+    color: #3330E4;
+}
+.fa-handshake {
+    color: #590696;
+}
+
+.imagem-fim {
+    margin:0;
+    
+
+}
+
+.svg-3 {
+    margin-top: 10rem;
 }
