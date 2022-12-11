@@ -17,6 +17,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { PostagemComponent } from './postagem/postagem.component';
 import { CommentsComponent } from './comments/comments.component';
 import { OrderModule } from 'ngx-order-pipe';
+import { PostagemEditComponent } from './edit/postagem-edit/postagem-edit.component';
+import { PostagemDeleteComponent } from './delete/postagem-delete/postagem-delete.component';
 
 
 
@@ -31,6 +33,8 @@ import { OrderModule } from 'ngx-order-pipe';
     LoginComponent,
     PostagemComponent,
     CommentsComponent,
+    PostagemEditComponent,
+    PostagemDeleteComponent,
   
   ],
   imports: [

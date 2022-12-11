@@ -117,3 +117,7 @@
 .fa-flag{
   color: orange ;
 }
+
+.fa-github:hover {
+  color: #0162c8;
+}

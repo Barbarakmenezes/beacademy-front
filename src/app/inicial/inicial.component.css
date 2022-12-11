@@ -137,10 +137,13 @@ nav.container{
     letter-spacing: 1px;
     color: black;
     padding: auto;
-    
-    
+    cursor: pointer;
     
 }
+
+
+
+
 .containerheader {
     position: relative;
     width: 100%;
@@ -161,6 +164,12 @@ nav.container{
         
         
         
+    }
+
+    .links li:hover {
+        transform: scale(1.1);
+      color: #0096FF;
+    
     }
 
     .links ul{
@@ -223,14 +232,17 @@ nav.container{
 .container {
     height: 16rem;
    }
-  
+ 
    .imagem-inicio {
     width: 90%;
     justify-content: center;
     margin-left: 10rem ;
     margin-top: 1rem ;
 }
-
+.imagem-inicio:hover{
+    transform: scale(1.1);
+    
+}
 .texto-2{
     margin-bottom: 9rem;
    
@@ -253,7 +265,7 @@ nav.container{
 .font{
     font-size: 20px;
     color: orange;
-    margin-left: 13rem;
+    margin-left: 7rem;
 }
 
 
@@ -290,6 +302,10 @@ nav.container{
     color: #2A3990;
     font-size: 20pt;
  }
+ ul li :hover{
+    transform: scale(1.1);
+    
+ }
 
  .lista2{
 white-space: nowrap;
@@ -311,6 +327,10 @@ justify-content: center;
  .img-cel{
     width: 120%;
  }
+ .img-cel:hover{
+    transform: scale(1.1);
+    box-shadow: 5px 5px 5px rgb(189, 185, 185);
+ }
 
  
 .font-1{
@@ -324,12 +344,35 @@ span{
     
 
 /* ----------> Buttons <-------------- */
+ 
+.button4:hover{
+    transform: scale(1.1);
+    box-shadow: 5px 5px 5px rgb(189, 185, 185);
+}
+.botao-entrar:hover {
+    transform: scale(1.1);
+    box-shadow: 5px 5px 5px rgb(189, 185, 185);
+}
+.button1:hover {
+    transform: scale(1.1);
+    box-shadow: 5px 5px 5px rgb(189, 185, 185);
+}
+.button2:hover{
+    transform: scale(1.1);
+    box-shadow: 5px 5px 5px rgb(189, 185, 185);
+}
+.button3:hover{
+    transform: scale(1.1);
+    box-shadow: 5px 5px 5px rgb(189, 185, 185);
+
+}
+
 
 .botao-entrar{
     position: relative;
     display: inline-block;
-    padding: 12px 36px;
-    margin: 10px 0;
+    padding: 12px 30px;
+    margin: 8px 0;
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
@@ -394,7 +437,7 @@ span{
     border-radius: 40px;
      background: linear-gradient(90deg, #0162c8,  #07b3bf);
      border: none;
-     margin-left: 20px;
+   margin-left: 9rem;
   }
 
   .button2 {
@@ -449,13 +492,13 @@ cursor: pointer;
     margin: 0 auto;
     white-space: nowrap;
     overflow: hidden;
-    margin-left: 400px;
-    font-family: 'Shadows Into Light', cursive;
+    
+    flex-wrap: wrap;
     padding: 30px;
 }
 
 .typing-animation {
-    animation : blinkCursor 500ms infinite normal, typing 4s steps(40) 1s normal;
+    animation : blinkCursor 500ms  normal, typing 4s steps(40) 1s normal;
 } 
 
 @keyframes typing {
@@ -703,6 +746,11 @@ textarea{
    
     
    
+}
+
+.card-final:hover{
+    transform: scale(1.1);
+    box-shadow: 10px 5px 5px rgb(59, 101, 144);
 }
 
 .card-final i{

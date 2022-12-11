@@ -4,10 +4,12 @@ import { RouterModule, Routes } from '@angular/router';
 import { InicialComponent} from './inicial/inicial.component';
 import { CadastrarComponent } from './cadastrar/cadastrar.component';
 import { LoginComponent } from './login/login.component';
-import {FooterComponent } from './footer/footer.component'
+import {FooterComponent } from './footer/footer.component';
 import { FeedComponent } from './feed/feed.component';
 import { PostagemComponent } from './postagem/postagem.component';
 import { CommentsComponent } from './comments/comments.component';
+import { PostagemEditComponent } from './edit/postagem-edit/postagem-edit.component';
+import { PostagemDeleteComponent } from './delete/postagem-delete/postagem-delete.component';
  
 
 
@@ -21,7 +23,10 @@ const routes: Routes = [
 {path:'footer', component: FooterComponent}, 
 {path: 'feed', component: FeedComponent},
 {path: 'postagem', component: PostagemComponent}, 
-{path: 'comments', component: CommentsComponent}
+{path: 'comments', component: CommentsComponent}, 
+{path: 'postagem-edit', component: PostagemEditComponent}, 
+{path: 'postagem-delete', component: PostagemDeleteComponent}
+
 
 
 ]

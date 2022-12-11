@@ -23,10 +23,10 @@
               data-target="#novaPostagem">
               <i class="fa fa-plus-square-o mr-2" aria-hidden="true"></i> Nova postagem
             </button>
-            <button class="w-100 text-left btn btn-blue text-white mx-3 my-1 pl-4 colorbotton" data-toggle="modal"
-              data-target="#minhaPostagem"><a (click)="findByIdUser()">
-              <i class="fa fa-plus-square-o mr-2" aria-hidden="true"></i> Minhas Postagens
-           </a> </button>
+            <button   class="w-100 text-left btn btn-blue text-white mx-3 my-1 pl-4 colorbotton" 
+              data-target="#edit-postagem" ><i class="fa-solid fa-pen-to-square " aria-hidden="true"></i>  <a routerLink='/postagem-edit' class="text-white ml-1"   (click)="findByIdUser()" > Minhas Postagens </a>
+              
+            </button>
             <button class="w-100 text-left btn btn-blue text-white mx-3 my-1 pl-4 colorbotton" [routerLink]="['/user-edit', id]">
               <i class="fa fa-pencil-square-o mr-2" aria-hidden="true"></i>Editar perfil
             </button>
@@ -438,15 +438,7 @@ aria-hidden="true">
           </div>
         </div>
       </div>
-      <div class="col-md-3">
-        <div class="card my-5 p-3 shadow fixed-left bg-transparent">
-          <div class="row">
-            <div class="col-md-12">
-              <!-- <div class="elfsight-app-2a5ee209-13cb-47c1-8199-a18254d2ce34"></div> -->
-            </div>
-          </div>
-        </div>
-      </div>
+      
     </div>
   </div>
 

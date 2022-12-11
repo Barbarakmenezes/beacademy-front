@@ -42,3 +42,6 @@ ul.social-network li {
 .color {
     background-color:  #2A3990;
 }
+.fa-github:hover{
+    color: #3b4fd2;
+}
