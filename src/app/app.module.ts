@@ -14,7 +14,9 @@ import { FeedComponent } from './feed/feed.component';
 import { CadastrarComponent } from './cadastrar/cadastrar.component';
 import { LoginComponent } from './login/login.component';
 import { AppRoutingModule } from './app-routing.module';
-
+import { PostagemComponent } from './postagem/postagem.component';
+import { CommentsComponent } from './comments/comments.component';
+import { OrderModule } from 'ngx-order-pipe';
 
 
 
@@ -27,6 +29,8 @@ import { AppRoutingModule } from './app-routing.module';
     FeedComponent,
     CadastrarComponent,
     LoginComponent,
+    PostagemComponent,
+    CommentsComponent,
   
   ],
   imports: [
@@ -37,7 +41,8 @@ import { AppRoutingModule } from './app-routing.module';
     SwiperModule,
     AppRoutingModule , 
     AppRoutingModule, 
-    FormsModule
+    FormsModule,
+    OrderModule
 
   ],
   providers: [],

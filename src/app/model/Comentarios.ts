@@ -4,8 +4,9 @@ import { Usuario } from "./usuario"
 export class Comentarios {
 public id: number 
 public nome: string
+public postagem: Postagem
 public descricao: string
 public texto: string
-public postagem: Postagem[]
+public foto: string
 public usuario: Usuario
 }

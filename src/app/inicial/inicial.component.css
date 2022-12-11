@@ -6,6 +6,22 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Nerko+One&family=Poppins:ital,wght@0,400;0,500;1,200&display=swap');
 
+@media (max-width: 600px) {
+  
+  .containerheader {
+    width: 100%;
+    flex-direction: column;
+       flex-wrap: wrap;
+
+  
+    
+  }
+    .links{
+       background-color: red;
+     
+    }
+}
+
 
 *{
     
@@ -19,6 +35,9 @@ body {
    justify-content: center;
    font-family: 'Poppins', sans-serif; 
 }
+
+
+
 
 
 .separartopo{
@@ -709,6 +728,7 @@ textarea{
    
     margin-top: 3rem;
     margin-bottom: 1rem;
+    
 }
 
 

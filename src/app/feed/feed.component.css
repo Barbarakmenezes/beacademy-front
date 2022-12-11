@@ -18,7 +18,9 @@
     margin-left: 1100px;}
 
 
-
+.colorbotton {
+  background-color: #0162c8;
+}
 .t-azul{
     color: #23405B;
 }
@@ -79,10 +81,39 @@
 /* .pd-comentario{
   position:absolute;
 } */
-
 .color-comentario{
   /* background-color: #98E3AD; */
   border-style: solid;
   border-radius: 10px;
   border: 1px dashed gray;
+}
+.emoticons {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+ 
+  
+}
+.emoticons i {
+  font-size: 18pt;
+}
+.fa-camera {
+  color: #FB2576;
+  
+  
+}
+
+.fa-music {
+  color: #0162c8;
+}
+.fa-face-grin-wide {
+  color: yellow;
+}
+
+.fa-paperclip {
+  color: greenyellow;
+}
+.fa-flag{
+  color: orange ;
 }
