@@ -6,22 +6,31 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Nerko+One&family=Poppins:ital,wght@0,400;0,500;1,200&display=swap');
 
-@media (max-width: 600px) {
-  
-  .containerheader {
-    width: 100%;
-    flex-direction: column;
-       flex-wrap: wrap;
+@media (min-width:576px) and (max-width: 768px) {
 
-  
+    body {
+        background-color: red;
+    }
+     .imagem-inicio , .img-cel{
+    display: none;
+   }
+   .animated{
+   margin-right: 40rem;
+    height: 10rem;
+   }
+
+}
+@media (min-width:768px) and (max-width:992px) {
     
-  }
-    .links{
-       background-color: red;
-     
+  
+    body{
+        background-color: #0002A1;
+    }
+
+    svg{
+        width: 98%;
     }
 }
-
 
 *{
     
@@ -37,12 +46,19 @@ body {
 }
 
 
-
+svg {
+    width: 98.84%;
+}
 
 
 .separartopo{
     height: 4em;
   }
+
+  .separar {
+    height: 7rem;
+  }
+
 
 
   body{
@@ -52,9 +68,7 @@ body {
 }
 
 
-.color{
-    background-color: #fff;
-}
+
 
 
 
@@ -204,6 +218,111 @@ nav.container{
 
 
 
+/*---------> BLOCO 1 -----------------*/
+
+.container {
+    height: 16rem;
+   }
+  
+   .imagem-inicio {
+    width: 90%;
+    justify-content: center;
+    margin-left: 10rem ;
+    margin-top: 1rem ;
+}
+
+.texto-2{
+    margin-bottom: 9rem;
+   
+}
+.color{
+    background-color: #fff;
+}
+.animated {
+    width: 25rem;
+    margin-left: 2rem;
+    
+   
+}
+
+
+.wave  {
+        width: 78rem;
+       }
+
+.font{
+    font-size: 20px;
+    color: orange;
+    margin-left: 13rem;
+}
+
+
+/*------------------BLOCO 2 -----------------*/
+
+.bloco-2{
+    background-color:  #2A3990;
+     width: 100%;
+    height:20rem;
+    }
+
+
+
+    /*------------------BLOCO 3 -----------------*/
+
+    .cor {
+        color: #07b3bf;
+      }
+      .mb {
+        margin-bottom: 4rem;
+      }
+        
+ .bloco4 {
+    width: 100%;
+   justify-content: center;
+   align-items: center;
+    height: 38rem;
+ }
+
+ ul{
+   list-style: none;
+ }
+ ul i {
+    color: #2A3990;
+    font-size: 20pt;
+ }
+
+ .lista2{
+white-space: nowrap;
+
+justify-content: center;
+ }
+
+.lista2 i {
+    margin-right: 1rem;
+}
+.lista1 i {
+    margin-left: 1rem;
+}
+
+ .lista1 {
+    margin-left: 7rem;
+ }
+
+ .img-cel{
+    width: 120%;
+ }
+
+ 
+.font-1{
+    font-size: 10px;
+    color: black;
+}
+span{
+    color: black;
+}
+
+    
+
 /* ----------> Buttons <-------------- */
 
 .botao-entrar{
@@ -261,6 +380,23 @@ nav.container{
     
 
 }
+
+.button3{
+    position: relative;
+    display: inline-block;
+    padding: 12px 36px;
+    margin: 10px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+    border-radius: 40px;
+     background: linear-gradient(90deg, #0162c8,  #07b3bf);
+     border: none;
+     margin-left: 20px;
+  }
+
   .button2 {
     position: relative;
     display: inline-block;
@@ -298,42 +434,10 @@ cursor: pointer;
   }
 
 
-  .cor {
-    color: #07b3bf;
-  }
-
-  .separar {
-    height: 150px;
-  }
-  
-.mb {
-    margin-bottom: 50px;
-}
-
-  .button3{
-    position: relative;
-    display: inline-block;
-    padding: 12px 36px;
-    margin: 10px 0;
-    color: #fff;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 14px;
-    letter-spacing: 1px;
-    border-radius: 40px;
-     background: linear-gradient(90deg, #0162c8,  #07b3bf);
-     border: none;
-     margin-left: 20px;
-  }
 
 
 
 
-bloco3 {
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-}
 
 
 
@@ -369,7 +473,7 @@ bloco3 {
     }
 }
 
-
+/*
 
 section .card .image {
 height: 140px;
@@ -495,150 +599,33 @@ background: #fff;
 }
 
 
-
-/*.containerr{
-    height: 500px;
-    width: auto;
-    display: flex;
-   flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;}*/
-
-   .container {
-    height: 250px;
-   }
-  
-
-
-.animated {
-    width: 350px;
-    
+*/
    
-}
-
-
-.containerr2 {
-    height: 400px;
-    width: 100%;
-    display: flex;
-}
-.font{
-    font-size: 20px;
-    color: orange;
-    margin-left: 210px;
-}
-
-.font-1{
-    font-size: 10px;
-    color: black;
-}
-span{
-    color: black;
-}
-
-.bola-laranja {
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    background-color: orange;
-    margin-right: 900px;
-   
-}
-.bola-branca{
-    height: 110px;
-    width: 110px;
-    border-radius: 50%;
-    background-color: white;
-    margin-left: 1250px;
-    margin-bottom: 50px;
-    
-}
 
 
 
-.text-white{
-color: white;
-}
-.foto1{
-    margin-left: 30px;
-
-}
-.imagem-inicio {
-
-   
-    justify-content: center;
-    margin-left: 150px ;
-    margin-top: 70px ;
-}
 
 
 
-.bloco-2{
-    background-color:  #2A3990;
-     width: 1279px;
-    height: 300px;
-    
-  
-    
-   
-  
-    
-}
-
-.wave {
-    width: 100%;
-}
-
-.texto-2{
-    margin-bottom: 150px;
-   
-}
 
 
- .texto-inicio {
-    
-  margin-right: 30px;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-    
- }
+
+
+
+
+
+
+
+
+
+
 
  
 
- /* ------------- BLOCO 4 ----------*/
 
- .bloco4 {
-    width: 100%;
-   justify-content: center;
-   align-items: center;
-    height: 600px;
- }
 
- ul{
-   list-style: none;
- }
- ul i {
-    color: #2A3990;
-    font-size: 20pt;
- }
 
- .lista2{
-white-space: nowrap;
-
-justify-content: center;
- }
-
-.lista2 i {
-    margin-right: 15px;
-}
-.lista1 i {
-    margin-left: 15px;
-}
-
- .lista1 {
-    margin-left: 110px;
- }
+ /* --------- BLOCO 4   -------------*/
 
  .blocoazul {
     width: 100%;
@@ -648,9 +635,7 @@ justify-content: center;
     flex-wrap: nowrap;
     
  }
-
-
- /* --------- apresentação  -------------*/
+ 
 
  .formulario{
   padding: 2rem;
@@ -706,10 +691,7 @@ textarea{
     border-radius: 5%;
 }
 
-.onda3 {
-    width: 78rem;
-   
-}
+
 
 .card-final {
     height: 15rem;
@@ -731,11 +713,6 @@ textarea{
     
 }
 
-
-
-
-
-
 .final {
     justify-content: space-between;
 }
@@ -754,11 +731,7 @@ textarea{
     color: #590696;
 }
 
-.imagem-fim {
-    margin:0;
-    
 
-}
 
 .svg-3 {
     margin-top: 10rem;
