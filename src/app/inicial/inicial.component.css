@@ -803,9 +803,9 @@ textarea{
 .card-final {
     height: 15rem;
     width: 13rem;
-    background-color: rgb(251, 245, 245);
-    opacity: 0.5;
-    border-radius: 2%;
+    background-color: #ffffff   ;
+    opacity: 0.9;
+    border-radius: 5%;
     cursor: pointer;
    
     
