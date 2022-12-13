@@ -6,31 +6,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Nerko+One&family=Poppins:ital,wght@0,400;0,500;1,200&display=swap');
 
-@media (min-width:576px) and (max-width: 768px) {
 
-    body {
-        background-color: red;
-    }
-     .imagem-inicio , .img-cel{
-    display: none;
-   }
-   .animated{
-   margin-right: 40rem;
-    height: 10rem;
-   }
 
-}
-@media (min-width:768px) and (max-width:992px) {
-    
-  
-    body{
-        background-color: #0002A1;
-    }
-
-    svg{
-        width: 98%;
-    }
-}
 
 *{
     
@@ -67,49 +44,21 @@ svg {
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*-----------> Header ----------------*/
+.text-black{
+    color: black  !important;
+}
+
 a{
     text-decoration: none;
 }
 ul {
     list-style: none;
 
+}
+.menu-btn{
+    display: none;
+    cursor: pointer;
 }
 
 header{
@@ -126,6 +75,11 @@ nav.container{
     align-items: center;
     flex-wrap: wrap;
    
+}
+.menu-btn{
+    display: none;
+    color: #0078AA;
+    cursor: pointer;
 }
 
 .logo {
@@ -222,10 +176,6 @@ nav.container{
     color: whitesmoke;
   }
 
-/*-----------> Fim  Header ----------------*/
-
-
-
 
 /*---------> BLOCO 1 -----------------*/
 
@@ -257,7 +207,6 @@ nav.container{
    
 }
 
-
 .wave  {
         width: 78rem;
        }
@@ -287,13 +236,7 @@ nav.container{
       .mb {
         margin-bottom: 4rem;
       }
-        
- .bloco4 {
-    width: 100%;
-   justify-content: center;
-   align-items: center;
-    height: 38rem;
- }
+         /*------------------BLOCO 4 -----------------*/
 
  ul{
    list-style: none;
@@ -518,7 +461,7 @@ cursor: pointer;
     }
 }
 
-/*-------------------*/
+/*-------- CARROSEL -----------*/
  .card .image {
 height: 140px;
 width: 140px;
@@ -633,7 +576,7 @@ background: #fff;
 }
 
 
-/*---------------------------------*/
+
    
 
 .backgroundcolor {
@@ -715,7 +658,7 @@ background: #fff;
 
 
 
-
+/*---------------------------------*/
 
 
 
@@ -733,8 +676,16 @@ background: #fff;
 
 
  /* --------- BLOCO 4   -------------*/
+ .bloco4 {
+    width: 100%;
+   justify-content: center;
+   align-items: center;
+    height: 38rem;
+ }
 
- .blocoazul {
+
+/* --------- forms  -------------*/
+ .blocoforms {
     width: 100%;
     height:34rem;
     background-color:#2A3990;
@@ -847,5 +798,234 @@ textarea{
 
 .svg-3 {
     margin-top: 10rem;
+}/*--------- responsividade ------*/
+
+@media(min-width:1025px) and (max-width:1200px){
+    
+
+   .logo{
+    margin: 0;
+    margin-right: 4rem;
+   }
+   .botao-entrar {
+    margin-left: 4rem;
+   }  
+svg{
+    width: 98.67%;
 }
 
+     body{
+         background-color: #009EFF;
+     }
+ }
+
+
+
+
+ @media (min-width:950px) and (max-width:1024px){
+          
+    header {
+        width: 100%;
+    }
+    .logo{
+        margin: 0;
+        
+        margin-right: 0.5rem;
+        
+    }
+    .botao-entrar{
+        margin-left: 2rem;
+    }
+    .imagem-inicio{
+       margin: 0;
+        width: auto;
+        height: 30rem;
+       
+    }
+    svg{
+        width: 98.50%;
+    }
+     body {
+         background-color: rgb(40, 200, 101);
+     }
+
+     .img-cel{
+        width: 95%;
+        margin-left: 2rem;
+        
+     }
+     .lista1{
+        white-space: nowrap;
+     }
+     .card-final{
+       width: 10rem;
+     }
+     
+ 
+ }
+
+
+
+
+
+ @media (min-width:790px) and (max-width:949px) {
+     
+   
+     body{
+         background-color: #accd34;
+         overflow-x: hidden;
+     
+       
+     }
+     svg{
+        width: 98.1%;
+     }
+
+   
+.imagem-inicio{
+    width: 100%;
+    margin: 0;
+}    
+.animated{
+    width: 80%;
+}
+  .card2{
+    gap: 2px;
+  }
+  .card-carrosel{
+    width: 17rem;
+  }
+  .img-cel{
+    width: 70%;
+    margin-left: 5rem;
+  }
+  .lista1{
+    white-space: nowrap;
+  }
+
+.final{
+    flex-flow: wrap;
+}
+.separarfim{
+    height: 30rem;
+}
+
+      .containerheader ul{
+    position: absolute;
+    top: 8vh;
+     right: 0;
+    width: 50vh;
+    
+    background-color: #0096FF;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%);
+      }
+      .containerheader li {
+        margin-left: 0;
+        opacity: 0;
+      }
+      .menu-btn  {
+        display: block;
+
+      }
+
+     
+     
+
+
+  
+
+ }
+
+
+
+
+
+
+
+
+
+
+ @media (min-width:500px) and (max-width:789px){
+    body{
+       
+    }
+    .imagem-inicio{
+      display: none;
+    }
+    .cor-fundo{
+        margin-top: 6rem;
+        justify-content: center;
+    }
+    .animated{
+        width: 40%;
+    }
+
+
+    .bloco-2{
+        margin-top: 8rem;
+    }
+
+    .bloco4{
+        flex-wrap: nowrap;
+        flex-direction: row;
+     justify-content: space-between;
+     height: 16rem;
+     margin: 0;
+     
+
+    }
+
+
+svg{
+display: none;
+}
+.card2{
+    gap: 2px;
+  }
+
+  .card-carrosel{
+    width: 12rem;
+    padding-left: 1rem;
+  }
+  .card-carrosel .card-content{
+    align-items: center;
+  }
+
+  .lista1{
+   
+    font-size: 10pt;
+    margin-left:  0;
+    
+  }
+  .img-cel{
+   display: none;
+
+
+}
+  .lista2{
+    font-size: 10pt;
+  
+  }
+  
+
+  .formulario{
+    width: 50rem;
+  }
+
+  .final{
+    flex-flow: wrap;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: auto;
+  height: 40rem;
+ 
+
+}
+.separarfim{
+    height: 30rem;
+}
+
+ }

@@ -23,7 +23,7 @@ import { AppComponent } from '../app.component';
 })
 export class InicialComponent implements OnInit {
     
-  
+
 
   constructor() { }
 
@@ -31,17 +31,13 @@ export class InicialComponent implements OnInit {
  window.scroll(0,0)
  
   }
-  controls = document.querySelectorAll('.control');
-  currentitem=0;
-  items = document.querySelectorAll('item');
-   maxItems = this.items.length;
 
 
 
    
-
-
    
 
  
 }
+
+
