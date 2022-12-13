@@ -814,9 +814,7 @@ svg{
     width: 98.67%;
 }
 
-     body{
-         background-color: #009EFF;
-     }
+    
  }
 
 
@@ -845,9 +843,7 @@ svg{
     svg{
         width: 98.50%;
     }
-     body {
-         background-color: rgb(40, 200, 101);
-     }
+     
 
      .img-cel{
         width: 95%;
@@ -872,7 +868,7 @@ svg{
      
    
      body{
-         background-color: #accd34;
+         
          overflow-x: hidden;
      
        
@@ -949,9 +945,7 @@ svg{
 
 
  @media (min-width:500px) and (max-width:789px){
-    body{
-       
-    }
+   
     .imagem-inicio{
       display: none;
     }
