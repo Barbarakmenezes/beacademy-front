@@ -3,5 +3,7 @@ export const environment = {
   token: '',
   nome: '', 
   id: 0, 
-  foto: ""
+  foto: "", 
+  usuario: "",
+  url : "https://projetobeacademy1.onrender.com"
 };

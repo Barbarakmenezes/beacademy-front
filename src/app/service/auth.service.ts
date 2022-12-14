@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Usuario } from '../model/usuario';
+import { environment } from 'src/environments/environment';
 import { UsuarioLogin } from '../model/usuarioLogin';
 
 @Injectable({
@@ -17,18 +18,18 @@ export class AuthService {
 
  
 entrar (usuarioLogin : UsuarioLogin) : Observable <UsuarioLogin>{
-  return this.http.post<UsuarioLogin>('http://localhost:8080/usuarios/logar' , usuarioLogin)
+  return this.http.post<UsuarioLogin>(`${environment.url}/usuarios/logar` , usuarioLogin)
 }
 
 
 
 cadastrar (usuario:Usuario) : Observable <Usuario>{
-  return this.http.post<Usuario>('http://localhost:8080/usuarios/cadastrar', usuario)
+  return this.http.post<Usuario>(`${environment.url}usuarios/cadastrar`, usuario)
 }
 
 
 getByIdUser(id: number): Observable<Usuario>{
-  return this.http.get<Usuario>('http://localhost:8080/usuarios/${id}')
+  return this.http.get<Usuario>(`${environment.url}/usuarios/${id}`)
 }
 
 

@@ -73,11 +73,7 @@ nav.container{
     flex-wrap: wrap;
    
 }
-.menu-btn{
-    display: none;
-    color: #0078AA;
-    cursor: pointer;
-}
+
 
 .logo {
    
@@ -176,7 +172,19 @@ nav.container{
     transition: ease 0.3s;
   }
 
+ .fa-bars{
+    color: #0078AA;
+    margin-top: 2rem;
+    font-size: 20pt;
+    display: none;
+    
+ }
 
+
+
+ 
+
+  
 /*---------> BLOCO 1 -----------------*/
 
 .container {
@@ -881,30 +889,39 @@ svg{
     height: 30rem;
 }
 
-      .containerheader ul{
-    position: absolute;
-    top: 8vh;
-     right: 0;
-    width: 50vh;
     
-    background-color: #0096FF;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    transform: translateX(100%);
-      }
-      .containerheader li {
-        margin-left: 0;
-        opacity: 0;
-      }
-      .menu-btn  {
+     
+.fa-bars  {
         display: block;
+        color: #0078AA;
+         }
 
-      }
+nav ul {
+    position: fixed;
+    top: 80px;
+    left: -139%;
+    background-color: #0078AA;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+}
 
-     
-     
+nav ul.open{
+    
+margin-left: 0;
+}
 
+
+
+
+.fa-moon-o{
+    display: none;
+}
+
+  
+  
+      
 
   
 
@@ -957,11 +974,18 @@ display: none;
 
   .card-carrosel{
     width: 12rem;
-    padding-left: 1rem;
-  }
-  .card-carrosel .card-content{
-    align-items: center;
-  }
+    padding: 2rem;
+    height: 20rem;
+    
+}
+.card-carrosel i {
+    margin-right: 3rem;
+}
+
+.card-carrosel .rating {
+    margin-right: 3rem;
+}
+
 
   .lista1{
    
@@ -996,5 +1020,106 @@ display: none;
 .separarfim{
     height: 30rem;
 }
+.responsifim{
+    justify-content: center;
+   }
+   .final {
+    align-items: center;
+    justify-content: center;
+   }
 
  }
+
+
+
+ @media (max-width:500px){
+        
+
+       
+    .imagem-inicio{
+        display: none;
+      }
+
+      .separartopo {
+        height: 13rem;
+      }
+      .bloco-2{
+        margin-top: 9rem;
+      
+      }
+      .bloco-2 h1 {
+        margin-top: 3rem;
+        margin-left: 2rem;
+      }
+       .texto-2{
+        font-size: 10pt;
+        margin-left: 2rem;
+       }
+       .button2 {
+        margin-left: 5rem;
+       }
+    svg{
+        display: none;
+        }
+
+    .formulario{
+        width: 20rem;
+      }
+     textarea{
+        width: 15rem;
+      }
+
+      .card2{
+        gap: 2px;
+      }
+  
+    .img-cel{
+       display: none;
+    }
+    .bloco4{
+        flex-flow: column;
+        height: 16rem;
+        justify-content: center;
+    
+    }
+    .lista2{
+        margin-left: 7rem;
+    }
+
+    .final{
+        flex-flow: wrap;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: auto;
+      height: 40rem;
+     
+    
+    }
+   .responsifim{
+    justify-content: center;
+   }
+   .final {
+    align-items: center;
+    justify-content: center;
+   }
+
+    .separarfim{
+        height: 60rem;
+    }
+
+    .card-carrosel{
+        width: 12rem;
+        padding: 2rem;
+        height: 19rem;
+ }
+.card-carrosel i {
+    margin-right: 3rem;
+}
+
+.card-carrosel .rating {
+    margin-right: 3rem;
+}
+
+
+
+}

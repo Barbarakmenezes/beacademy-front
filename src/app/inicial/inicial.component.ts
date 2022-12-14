@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
 import { AppComponent } from '../app.component';
 import { Observable } from 'rxjs';
+import { ScrollbarEvents } from 'swiper/types';
 
 
 
@@ -22,9 +23,11 @@ import { Observable } from 'rxjs';
 })
 export class InicialComponent implements OnInit {
  
+ 
 
-
-  constructor() { }
+  constructor(
+    
+  ) { }
 
   ngOnInit(): void {
  window.scroll(0,0);
@@ -51,12 +54,41 @@ export class InicialComponent implements OnInit {
   
   
   }
+
+   ul = document.querySelector('nav ul');
+   menuBtn = document.querySelector('#hamburguer');
+ 
+
+
    
+   abrirNav(){
+  
+
+  
+  
+  if(this.ul?.classList.contains('open')){
+  this.ul.classList.remove('open');
+ } else {
+    this.ul?.classList.add('open');
+ }
+}
+    
+
+  
+
+  
+}
+ 
+  
+
+  
+
    
+
 
   
   
  
-}
+
 
 
