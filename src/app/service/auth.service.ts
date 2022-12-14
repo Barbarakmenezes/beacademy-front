@@ -18,18 +18,18 @@ export class AuthService {
 
  
 entrar (usuarioLogin : UsuarioLogin) : Observable <UsuarioLogin>{
-  return this.http.post<UsuarioLogin>(`${environment.url}/usuarios/logar` , usuarioLogin)
+  return this.http.post<UsuarioLogin>( "https://projetobeacademy1.onrender.com/usuarios/logar" , usuarioLogin)
 }
 
 
 
 cadastrar (usuario:Usuario) : Observable <Usuario>{
-  return this.http.post<Usuario>(`${environment.url}usuarios/cadastrar`, usuario)
+  return this.http.post<Usuario>( "https://projetobeacademy1.onrender.com/usuarios/cadastrar", usuario)
 }
 
 
 getByIdUser(id: number): Observable<Usuario>{
-  return this.http.get<Usuario>(`${environment.url}/usuarios/${id}`)
+  return this.http.get<Usuario>( "https://projetobeacademy1.onrender.com/usuarios/${id}")
 }
 
 
