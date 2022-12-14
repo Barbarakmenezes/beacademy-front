@@ -20,6 +20,7 @@ body {
     width: 100%;
    justify-content: center;
    font-family: 'Poppins', sans-serif; 
+   font-weight: 500;
 }
 
 
@@ -38,11 +39,7 @@ svg {
 
 
 
-  body{
-    --heading-color: hsl(var(--hue-1), 61%, 24%);
-    --text-color: hsl(var(--hue-1), 17%, 63%);
-
-}
+ 
 
 /*-----------> Header ----------------*/
 .text-black{
@@ -92,6 +89,7 @@ nav.container{
     color: black;
     padding: auto;
     cursor: pointer;
+    transition: ease 0.3s;
     
 }
 
@@ -114,6 +112,7 @@ nav.container{
         display: flex;
         justify-content: space-between;
         color: black;
+        transition: ease 0.3s;
        
         
         
@@ -174,6 +173,7 @@ nav.container{
     margin-left: 20px;
     background-color: #0002A1;
     color: whitesmoke;
+    transition: ease 0.3s;
   }
 
 
@@ -188,11 +188,29 @@ nav.container{
     justify-content: center;
     margin-left: 10rem ;
     margin-top: 1rem ;
+    transition: ease 0.3s;
 }
 .imagem-inicio:hover{
     transform: scale(1.1);
     
 }
+
+
+.font{
+    font-size: 20px;
+    color: orange;
+    margin-left: 7rem;
+}
+
+span{
+    color: black;
+}
+
+
+/*------------------BLOCO 2 -----------------*/
+
+
+
 .texto-2{
     margin-bottom: 9rem;
    
@@ -207,18 +225,6 @@ nav.container{
    
 }
 
-.wave  {
-        width: 78rem;
-       }
-
-.font{
-    font-size: 20px;
-    color: orange;
-    margin-left: 7rem;
-}
-
-
-/*------------------BLOCO 2 -----------------*/
 
 .bloco-2{
     background-color:  #2A3990;
@@ -226,6 +232,192 @@ nav.container{
     height:20rem;
     }
 
+
+
+  /*-------- CARROSEL -----------*/
+
+
+    .card {
+    background: #fff;
+        border-radius: 20px;
+        position: relative;
+        margin: 20px 0;
+        width: 280px;
+        transition: ease 0.3s;
+    }
+    
+    .card::before {
+     content: "";
+     position: absolute;
+     height: 40%;
+     width: 100%;
+     background-color: #7d2ae8;
+     border-radius: 20px 20px 0 0;
+    
+    }
+    .card .card-content {
+      display: flex;
+      flex-direction:row;
+      align-items: center;
+        padding: 30px;
+        position: relative;
+        z-index: 100;
+    }
+    .card .media-icons{
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card .media-icons i{
+        color: #fff;
+        opacity: 0.6;
+        margin-top: 10px;
+        transition: all 0.3s ease;
+        cursor: pointer;
+    
+    
+    }
+    
+    
+    .card .media-icons i:hover {
+      opacity: 1;
+    }
+    
+    .card .name-tec{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+        color: #333;
+    }
+    .name-tec   .name {
+    
+        font-size: 20px;
+        font-weight: 600;
+    }
+    
+    .name-tec .profession{
+     font-size: 15px;
+     font-weight: 500;
+    
+    }
+    
+    
+    
+    .card .button {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+    }
+    
+    .card .button button {
+        background-color: #7d2ae8;
+        outline: none;
+        border: none;
+        color: #fff;
+        padding: 8px 22px;
+        border-radius: 20px;
+        font-size: 14px;
+        transition: all 0.3s ease;
+        cursor: pointer;
+    }
+    
+    .button button:hover {
+        background-color: #6616d0;
+    }
+    
+    .cor-fundo{
+        
+        background-color:#fff;
+      
+    }
+    
+    
+    
+       
+    
+    .backgroundcolor {
+        background: #eeeff0;
+       
+    }
+    
+    .card-carrosel {
+        height: 17rem;
+        width: 20rem;
+        padding: 3rem;
+        background-color: rgb(255, 255, 255);
+        opacity: 0.5;
+        border-radius: 2%;
+        cursor: pointer;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+       
+        border-radius: 10%;
+    }
+    .card-carrosel i{
+        font-size: 30pt;
+    }
+    .card2 {
+        gap: 6rem;
+     }
+     
+     .card-content {
+       
+        height: rem;
+        width: 12rem;
+        position: relative;
+        margin: 0 2px;
+     }
+    
+     .color-card1 {
+        background-color: #009EFF;
+     }
+     .color-card2 {
+        background-color: #FF8FB1;
+     }
+    .color-card3{
+        background-color: #554994;
+    }
+    .color-card4  {
+        background-color: #66BFBF;
+    }
+    
+    .color-card5 {
+        background-color: #3CCF4E;
+    } 
+    .color-card6 {
+        background-color: #0078AA;
+    }
+    .color-card7{
+        background-color: #C499BA;
+    }
+    .color-card8{
+        background-color: #FF7396;
+    }
+    
+    .color-card9{
+        background-color: #FAAB78;
+    }
+    
+     .fa-brands{
+        font-weight: 100;
+     }
+    
+    
+     .card-carrosel .rating i {
+    
+        font-size: 15pt;
+        margin: 0 2px;
+        color: white;
+    }
+    
+    
+    
+    
 
 
     /*------------------BLOCO 3 -----------------*/
@@ -236,9 +428,9 @@ nav.container{
       .mb {
         margin-bottom: 4rem;
       }
-         /*------------------BLOCO 4 -----------------*/
 
- ul{
+
+         ul{
    list-style: none;
  }
  ul i {
@@ -275,15 +467,6 @@ justify-content: center;
     box-shadow: 5px 5px 5px rgb(189, 185, 185);
  }
 
- 
-.font-1{
-    font-size: 10px;
-    color: black;
-}
-span{
-    color: black;
-}
-
     
 
 /* ----------> Buttons <-------------- */
@@ -309,8 +492,6 @@ span{
     box-shadow: 5px 5px 5px rgb(189, 185, 185);
 
 }
-
-
 .botao-entrar{
     position: relative;
     display: inline-block;
@@ -325,6 +506,7 @@ span{
     background: linear-gradient(90deg, #0162c8, #55e7fc );
     margin-left: 1em;
     cursor: pointer;
+    transition: ease 0.3s;
 }   
 
 
@@ -338,12 +520,13 @@ span{
         text-decoration: none;
         text-transform: uppercase;
         font-size: 14px;
-        letter-spacing: 1px;
+        
         border-radius: 40px;
         background: linear-gradient(90deg, #0162c8, #FB2576);
         border: none;
         margin-left: 75px;
         cursor: pointer;
+        transition: ease 0.3s;
         
       
 }
@@ -363,6 +546,7 @@ span{
     border: none;
     margin-left: 75px;
     cursor: pointer;
+    transition: ease 0.3s;
     
 
 }
@@ -381,6 +565,7 @@ span{
      background: linear-gradient(90deg, #0162c8,  #07b3bf);
      border: none;
    margin-left: 9rem;
+   transition: ease 0.3s;
   }
 
   .button2 {
@@ -398,6 +583,7 @@ span{
      border: none;
     margin-left: 30px;
 cursor: pointer;
+transition: ease 0.3s;
     
       
   }
@@ -417,6 +603,7 @@ cursor: pointer;
      border: none;
     margin-left: 30px;
     cursor: pointer;
+    transition: ease 0.3s;
   }
 
 
@@ -427,7 +614,7 @@ cursor: pointer;
 
 
 
-
+/* ----------- Animation --------------*/
 
 
 .line {
@@ -461,221 +648,7 @@ cursor: pointer;
     }
 }
 
-/*-------- CARROSEL -----------*/
- .card .image {
-height: 140px;
-width: 140px;
-border-radius: 50%;
-padding: 3px;
-background-color: #3F0071;
-}
-
-.card .image img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 3px solid #fff;
-    }
-.card {
-background: #fff;
-    border-radius: 20px;
-    position: relative;
-    margin: 20px 0;
-    width: 280px;
-}
-
-.card::before {
- content: "";
- position: absolute;
- height: 40%;
- width: 100%;
- background-color: #7d2ae8;
- border-radius: 20px 20px 0 0;
-
-}
-.card .card-content {
-  display: flex;
-  flex-direction:row;
-  align-items: center;
-    padding: 30px;
-    position: relative;
-    z-index: 100;
-}
-.card .media-icons{
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.card .media-icons i{
-    color: #fff;
-    opacity: 0.6;
-    margin-top: 10px;
-    transition: all 0.3s ease;
-    cursor: pointer;
-
-
-}
-
-
-.card .media-icons i:hover {
-  opacity: 1;
-}
-
-.card .name-tec{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 10px;
-    color: #333;
-}
-.name-tec   .name {
-
-    font-size: 20px;
-    font-weight: 600;
-}
-
-.name-tec .profession{
- font-size: 15px;
- font-weight: 500;
-
-}
-
-
-
-.card .button {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
-}
-
-.card .button button {
-    background-color: #7d2ae8;
-    outline: none;
-    border: none;
-    color: #fff;
-    padding: 8px 22px;
-    border-radius: 20px;
-    font-size: 14px;
-    transition: all 0.3s ease;
-    cursor: pointer;
-}
-
-.button button:hover {
-    background-color: #6616d0;
-}
-
-.cor-fundo{
-    
-    background-color:#fff;
-  
-}
-
-
-
-   
-
-.backgroundcolor {
-    background: #eeeff0;
-   
-}
-
-.card-carrosel {
-    height: 17rem;
-    width: 20rem;
-    padding: 3rem;
-    background-color: rgb(255, 255, 255);
-    opacity: 0.5;
-    border-radius: 2%;
-    cursor: pointer;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-   
-    border-radius: 10%;
-}
-.card-carrosel i{
-    font-size: 30pt;
-}
-.card2 {
-    gap: 6rem;
- }
- 
- .card-content {
-   
-    height: rem;
-    width: 12rem;
-    position: relative;
-    margin: 0 2px;
- }
-
- .color-card1 {
-    background-color: #009EFF;
- }
- .color-card2 {
-    background-color: #FF8FB1;
- }
-.color-card3{
-    background-color: #554994;
-}
-.color-card4  {
-    background-color: #66BFBF;
-}
-
-.color-card5 {
-    background-color: #3CCF4E;
-} 
-.color-card6 {
-    background-color: #0078AA;
-}
-.color-card7{
-    background-color: #C499BA;
-}
-.color-card8{
-    background-color: #FF7396;
-}
-
-.color-card9{
-    background-color: #FAAB78;
-}
-
- .fa-brands{
-    font-weight: 100;
- }
-
-
- .card-carrosel .rating i {
-
-    font-size: 15pt;
-    margin: 0 2px;
-    color: white;
-}
-
-
-
-
-
-/*---------------------------------*/
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
- /* --------- BLOCO 4   -------------*/
+/* --------- BLOCO 4 FORMS  -------------*/
  .bloco4 {
     width: 100%;
    justify-content: center;
@@ -683,8 +656,6 @@ background: #fff;
     height: 38rem;
  }
 
-
-/* --------- forms  -------------*/
  .blocoforms {
     width: 100%;
     height:34rem;
@@ -707,16 +678,9 @@ background: #fff;
     background-size: 300% 300%;
     animation: colors 15s forwards infinite;
     margin-left: 1rem;
+    }
+
     
-  
-  
-  
-   
-   
-  
- }
-
-
  @keyframes colors {
     0% {
         background-position: 0% 50%;
@@ -731,6 +695,7 @@ background: #fff;
     }
 }
 
+
  .corinput {
     background: transparent;
     border: none;
@@ -741,14 +706,18 @@ background: #fff;
     margin-bottom: 60px;
 }
 
-.container span{
-    color: orange;
-}
 textarea{
    
     border-radius: 5%;
 }
 
+/*------------ BLOCO 5 -------------*/
+
+
+
+.container span{
+    color: orange;
+}
 
 
 .card-final {
@@ -758,6 +727,7 @@ textarea{
     opacity: 0.9;
     border-radius: 5%;
     cursor: pointer;
+    transition: ease 0.3s;
    
     
    
@@ -798,6 +768,11 @@ textarea{
 
 .svg-3 {
     margin-top: 10rem;
+
+
+
+
+
 }/*--------- responsividade ------*/
 
 @media(min-width:1025px) and (max-width:1200px){

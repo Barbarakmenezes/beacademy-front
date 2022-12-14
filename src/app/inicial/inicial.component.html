@@ -28,7 +28,10 @@
   <li>
       <a href="#contact" class="nav-link">Contatos</a>
   </li>
-  <i  id="margin-lua" class="fa fa-moon-o"  ></i>
+  <i  id="margin-lua" class="fa fa-moon-o"></i>
+
+
+  
   
   
   <button class="botao-entrar" routerLink="/login"> Log-in  <i class="fa-solid fa-chevron-right"></i></button>
@@ -41,7 +44,7 @@
 <section class="separartopo"></section>
 <body>
 
-  <!---------------- BLOCO 1 ----------------->
+  <!---------------- 1 bloco ----------------->
     
 <div >
  <div class="row  d-flex align-items-center cor-fundo container ">
@@ -50,13 +53,13 @@
       <h1 class="font">Bárbara Menezes | <span class="text-black">Portfólio</span> </h1>
       <hr>
       <p class="text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis magni ipsum corrupti in eius soluta, laudantium laboriosam consequatur, nam ab sequi, voluptas exercitationem adipisci laborum ad officia impedit culpa optio.</p>
-      <button class="button1"> Saiba mais </button>
-      <button class="button2">Cadastrar</button>
+      <button class="button1">  <a href="/src/assets/CV-  BARBARA M.pdf" download class=" text-white">Download CV</a> </button>
+      <button class="button2 ">Cadastrar</button>
 </div>
 
 
 
-<div class="col-md-6 d-flex ">
+<div class="col-md-6 d-flex showcase-area" id="home">
   <img class="imagem-inicio"  src="https://imgur.com/xMdYOaI.png">
    
 </div>
@@ -299,7 +302,7 @@
       <section class="separar"></section>
 
 
-      <!------------------- BLOCO 4  ---------------------------->
+      <!------------------- BLOCO 3  ---------------------------->
 
       <h4 class="text-center cor">Relax, we've get you covered</h4>
       <p class="text-center mb">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo voluptas temporibus?</p>
@@ -342,7 +345,7 @@
  </div>
         </div>
 
-        <!------------------- BLOCO 5 (FORMS) ---------------------------->
+        <!------------------- BLOCO 4 (FORMS) ---------------------------->
 
       </div>
       <section class="separar"></section>
@@ -355,7 +358,7 @@
 
   <div class="col-md-7 formulario ">
     <a name="contact"></a>
-          <h3 class="text-center text-white mt-1">Ask Me </h3>
+          <h3 class="text-center text-white mt-1"> Send me a message <a href="mailto:barbarakerolaine@hotmail.com" class="mail"> <i class="fa-solid fa-envelope text-white ml-3"></i></a> </h3>
           <form>
             <div class="form-group">
                 <label for="email" class="text-white">Email:</label>
@@ -372,6 +375,8 @@
                 <textarea   id="message" name="message" cols="40" rows="4" maxlength="100" placeholder="Digite sua mensagem" required></textarea>
                   </div>
                   <input type="submit" value="Enviar" class="btn" (click)="enviarFormulario()">
+
+                 
 
 
 
@@ -390,7 +395,7 @@
    </div>
       
       
- <!-------------------  BLOCO 6 ---------------------------->
+ <!-------------------  BLOCO 5 ---------------------------->
       
 <section class="separar"></section>
 

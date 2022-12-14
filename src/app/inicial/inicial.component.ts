@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
-
-
 import { AppComponent } from '../app.component';
+import { Observable } from 'rxjs';
 
 
 
@@ -22,14 +21,15 @@ import { AppComponent } from '../app.component';
   
 })
 export class InicialComponent implements OnInit {
-    
+ 
 
 
   constructor() { }
 
   ngOnInit(): void {
- window.scroll(0,0)
- 
+ window.scroll(0,0);
+
+
   }
 
 
@@ -54,6 +54,8 @@ export class InicialComponent implements OnInit {
    
    
 
+  
+  
  
 }
 
