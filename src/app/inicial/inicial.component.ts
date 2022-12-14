@@ -33,7 +33,24 @@ export class InicialComponent implements OnInit {
   }
 
 
-
+  enviarFormulario() {
+    let email : string = (<HTMLInputElement>document.getElementById("email")).value;
+    let nome : string = (<HTMLInputElement>document.getElementById("nome")).value;
+    let message : string = (<HTMLInputElement>document.getElementById("message")).value;
+  
+  
+  if (email == ""){
+   alert('Preencha todos os campos');
+  } else if (nome == "") {
+   alert('Preencha o campo de nome');
+  }else if (message == "") {
+    alert('Preencha todos os campos');
+  } else if (email != "" && nome != "" ){
+   alert('Enviado com sucesso!');
+  }
+  
+  
+  }
    
    
 
