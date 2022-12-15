@@ -177,9 +177,13 @@ nav.container{
     margin-top: 2rem;
     font-size: 20pt;
     display: none;
+ 
     
  }
 
+ #check{
+    display: none;
+ }
 
 
  
@@ -847,7 +851,7 @@ svg{
 
 
 
- @media (min-width:790px) and (max-width:949px) {
+ @media(min-width:790px) and (max-width:949px) {
      
    
      body{
@@ -889,29 +893,46 @@ svg{
     height: 30rem;
 }
 
-    
-     
-.fa-bars  {
+.fa-bars {
         display: block;
         color: #0078AA;
          }
 
-nav ul {
+ .links {
     position: fixed;
     top: 80px;
-    left: -139%;
-    background-color: #0078AA;
+    left: -100%;
+    background-color: #2A3990;
     width: 100%;
+    height: 100vh;
+    color: white;
     text-align: center;
-    display: block;
     transition: all 0.3s ease;
 }
-
-nav ul.open{
-    
-margin-left: 0;
+.logo{
+    display: none;
 }
 
+
+nav ul li {
+   display: block;
+    margin: 50px 0;
+    line-height: 30px;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+nav ul li a {
+    font-size: 17px;
+}
+#check:checked ~ .links{
+    left: 0;
+}
+
+
+.botao-entrar{
+    display: none;
+}
 
 
 
@@ -937,7 +958,7 @@ margin-left: 0;
 
 
  @media (min-width:500px) and (max-width:789px){
-   
+  
     .imagem-inicio{
       display: none;
     }
@@ -959,10 +980,57 @@ margin-left: 0;
         flex-direction: row;
      justify-content: space-between;
      height: 16rem;
-     margin: 0;
+ 
      
 
     }
+
+    .logo{
+        display: none;
+    }
+
+    .links {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background-color: #2A3990;
+        width: 100%;
+        height: 100vh;
+        color: white;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+    
+    
+    nav ul li {
+       display: block;
+        margin: 50px 0;
+        line-height: 30px;
+       
+    }
+    
+    nav ul li a {
+        font-size: 13px;
+    }
+    #check:checked ~ .links{
+        left: 0;
+    }
+    .fa-bars {
+        display: block;
+        color: #0078AA;
+         }
+    
+    .botao-entrar{
+        display: none;
+    }
+    
+    
+    
+    .fa-moon-o{
+        display: none;
+    }
+    
+  
 
 
 svg{
@@ -987,25 +1055,27 @@ display: none;
 }
 
 
-  .lista1{
-   
-    font-size: 10pt;
-    margin-left:  0;
-    
-  }
+ 
   .img-cel{
-   display: none;
-
-
+   width: 70%;
+   margin-left: 5rem;
+   margin-bottom: 14rem;
 }
   .lista2{
-    font-size: 10pt;
+   display: none;
+    
   
   }
-  
+  .lista1{
+    display: none;
+  }
+
 
   .formulario{
     width: 50rem;
+  }
+  .bloco4{
+    height: 3rem;
   }
 
   .final{
@@ -1013,9 +1083,12 @@ display: none;
   flex-direction: row;
   flex-wrap: wrap;
   width: auto;
-  height: 40rem;
+  height: 30rem;
  
 
+}
+.bloco4-2{
+    height: 25rem;
 }
 .separarfim{
     height: 30rem;
@@ -1027,21 +1100,29 @@ display: none;
     align-items: center;
     justify-content: center;
    }
-
+ 
  }
+
+
+
+
+
+
 
 
 
  @media (max-width:500px){
         
 
-       
     .imagem-inicio{
         display: none;
       }
+     .bloco-2{
+        border-radius: 10%;
+     }
 
       .separartopo {
-        height: 13rem;
+        height: 5rem;
       }
       .bloco-2{
         margin-top: 9rem;
@@ -1058,6 +1139,9 @@ display: none;
        .button2 {
         margin-left: 5rem;
        }
+       .button3{
+        margin-bottom: 8rem;
+       }
     svg{
         display: none;
         }
@@ -1073,19 +1157,25 @@ display: none;
         gap: 2px;
       }
   
-    .img-cel{
-       display: none;
-    }
-    .bloco4{
-        flex-flow: column;
-        height: 16rem;
-        justify-content: center;
-    
-    }
+   .bloco4-2{
+    display: none;
+   }
+   .mb{
+    margin-bottom: 0;
+   }
+  
     .lista2{
-        margin-left: 7rem;
+        display: none;
     }
-
+    .lista1{
+        display: none;
+    }
+    .img-cel{
+      width: 70%;
+      height: 20rem;
+      
+    }
+       
     .final{
         flex-flow: wrap;
       flex-direction: row;
@@ -1118,7 +1208,51 @@ display: none;
 
 .card-carrosel .rating {
     margin-right: 3rem;
+} .logo{
+    display: none;
 }
+
+.links {
+    position: fixed;
+    top: 80px;
+    left: -160%;
+    background-color: #2A3990;
+    width: 100%;
+    height: 100vh;
+    color: white;
+    text-align: center;
+    transition: all 0.3s ease;
+   
+}
+
+
+nav ul li {
+   display: block;
+    margin: 50px 0;
+    line-height: 30px;
+   
+}
+
+nav ul li a {
+    font-size: 10px;
+}
+#check:checked ~ .links{
+    left: 0;
+}
+.fa-bars {
+    display: block;
+    color: #0078AA;
+     }
+
+.botao-entrar{
+    display: none;
+}
+
+ 
+.fa-moon-o{
+    display: none;
+}
+
 
 
 

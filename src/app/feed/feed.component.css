@@ -122,3 +122,14 @@
   color: #0162c8;
 }
 
+@media (max-width: 800px){
+  .buttonsair{
+    margin-left: 5rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .buttonsair{
+    margin-left: 12rem;
+  }
+}

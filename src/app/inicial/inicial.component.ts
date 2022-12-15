@@ -22,17 +22,18 @@ import { ScrollbarEvents } from 'swiper/types';
   
 })
 export class InicialComponent implements OnInit {
- 
+  mainListDiv = document.getElementById('.links');
+   mediaButton = document.getElementById('hamburguer');
  
 
   constructor(
     
   ) { }
 
-  ngOnInit(): void {
+  ngOnInit(){
  window.scroll(0,0);
-
-
+ 
+   
   }
 
 
@@ -55,29 +56,30 @@ export class InicialComponent implements OnInit {
   
   }
 
-   ul = document.querySelector('nav ul');
-   menuBtn = document.querySelector('#hamburguer');
- 
 
 
-   
-   abrirNav(){
-  
 
-  
-  
-  if(this.ul?.classList.contains('open')){
-  this.ul.classList.remove('open');
- } else {
-    this.ul?.classList.add('open');
- }
-}
+
+  }
+
+
+
     
+  
+
+
+
+
+ 
+    
+   
+  
+
 
   
 
   
-}
+
  
   
 
